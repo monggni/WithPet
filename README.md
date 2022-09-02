@@ -1,4 +1,4 @@
-# 🐾위드펫(WithPet)
+# 🐾위드펫(WithPet)-멋쟁이 사자처럼 대학 10기 해커톤
 ### 기획 배경
 
 소중한 나의 반려동물과 어디든 함께하고 싶은 반려인들 모여라-!
@@ -8,9 +8,6 @@
 그러나 가고자 하는 곳이 반려동물 동반 입장이 가능한지, 유모차나 이동장 사용이 가능한지, 목줄을 풀 수 있는지 등등 관련 서비스 여부를 하나하나 찾아보아야 하는 경우가 많아 불편함이 있다. 
 
 따라서 이러한 불편함을 해결하기 위해서 반려동물과 함께할 수 있는 곳을 손쉽게 파악하고, 더 나아가 여행 코스를 소개하고 공유할 수 있는 서비스인 위드펫을 기획하게 되었다.
-
-https://port-0-project-zwu24l70l0pus.gksl1.cloudtype.app/
-https://port-0-project-zwu24l70l0pus.gksl1.cloudtype.app/
 
 
 ### 주요 기능
@@ -28,7 +25,7 @@ https://port-0-project-zwu24l70l0pus.gksl1.cloudtype.app/
 게시글 쓰기
 <img width="1441" alt="스크린샷 2022-08-28 15 10 32" src="https://user-images.githubusercontent.com/87985590/188221616-d52ee295-1a61-45d7-ad1b-2e1cdd90197a.png">
 
-### 서버 배포(서비스 종료)
+### 서버 배포
 https://port-0-project-zwu24l70l0pus.gksl1.cloudtype.app/
 https://port-0-project-zwu24l70l0pus.gksl1.cloudtype.app/
 
