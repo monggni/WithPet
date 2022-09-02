@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+  <head>
+    <title>위드펫</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="{% static 'css/style.css' %}?after" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="login-wrapper">
+        <div id="header" class="navbar">
+            <a href="/" id="hd-main-logo" class="clear-a"
+            ><img src="{% static 'img/logo.png' %}"
+            /></a>
+            <form class="d-flex" role="search">
+            <input
+                class="search-bar me-2"
+                type="search"
+                placeholder="검색어를 입력해주세요."
+                aria-label="Search"
+            />
+            <button type="submit" id="ic-search" class="clear-btn">
+                <img src="{% static 'img/search.png'%}" alt="검색" />
+            </button>
+            </form>
+            <div id="hd-login">
+            <a href="{% url 'login' %}" class="clear-a">로그인</a>
+            </div>
+            <div id="hd-signup">
+            <a href="./signup.html" class="clear-a">회원가입</a>
+            </div>
+        </div>
+        <form action="{% url 'login' %}" method = "POST">
+            {% csrf_token %}
+            <div id="login-container">
+            <input type="text" class="input-text" name = 'username' placeholder="아이디(이메일)" />
+            <input type="password" class="input-text" name = 'password' placeholder="비밀번호" />
+            <div class="form-check login-check">
+                <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                로그인 상태 유지
+                </label>
+            </div>
+            <button type="submit" class="btn-login" value="로그인">로그인</button>
+            </div>
+        </form>
+        <div id="find-id"><a href="#" class="clear-a">아이디 찾기</a></div>
+        <div id="find-pw"><a href="#" class="clear-a">비밀번호 찾기</a></div>
+    </div>
+    <footer>위드펫 WithPet | LikeLion 10th SWU Team5</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
